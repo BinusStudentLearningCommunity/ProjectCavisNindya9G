@@ -1,0 +1,24 @@
+/* CSS Document */
+
+input {
+    background: transparent;
+    border: none;
+}
+
+nav ul{height:250px; width:465px;}
+nav ul{overflow:hidden; overflow-y:scroll;}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

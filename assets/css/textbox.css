@@ -1,0 +1,9 @@
+/* Rounded Corner */
+.tb5 {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 40px;
+	width: 500px;
+	padding: 7px;
+	font-size: 20px;
+}
