@@ -39,7 +39,7 @@ else
 			$idLogin = $picketingIDLogin[$idx];
 			$query = "INSERT INTO Logout (idLogin,jamLogout) VALUES ( '$idLogin', NOW() )";
 			mysql_query($query);
-			header("Location:index.php?msg=<br>Log OUT : ".$row['nama']."<br>".date("Y-m-d h:i:sa"));
+			header("Location:index.php?msg=<br>Log OUT : " . $row['nama']."<br>".date("Y-m-d h:i:sa"));
 		}
 		else //LOGIN
 		{
@@ -51,7 +51,7 @@ else
 	else { //nim not found
 		header('Location:index.php?msg=NIM not Found');	
 	}
-	
+
 }
 	
 ?>

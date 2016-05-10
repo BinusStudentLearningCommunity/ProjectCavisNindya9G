@@ -51,9 +51,10 @@
 <div class="row">  
   <div class="col-md-3"></div>
   <div class="col-md-4">
-    <button type="button" class="btn btn-info btn-lg" style="width:300" value="Login">Login</button>
+    <!-- <button class="btn btn-info btn-lg" style="width:300"> --> <input name="input" type="submit" value="Login" class="btn btn-info btn-lg"> <!--  </button> -->
   </div>
 
+  <!-- Isi pesan setelah Login -->
   <?php //Message setelah Login / Logout / GAGAL login
     if (isset($_GET['msg'])) //jika ada message maka ...
     {
@@ -65,12 +66,14 @@
   <div>
     <nav>
       <ul style="font-size:18px">
+
         <?php 
           //looping untuk print nama-nama yg sudah login
           for ($i=0; $i < count($picketing); $i++) { 
             echo "<li class=\"list-unstyled\">" . $picketing[$i] . "</li>";
           }                
         ?>
+
         <!-- <li class="list-unstyled">Indra</li>
         <li class="list-unstyled">Indra</li>
         <li class="list-unstyled">Indra</li>
