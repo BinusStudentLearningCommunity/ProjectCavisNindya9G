@@ -45,9 +45,23 @@
 <div class="container" style="height:250"></div>
 <div class="row">
   <div class="col-md-2"></div>
-  <div class="col-md-6" style="height:60"><input type="text" name="NIM" style="height:30; width:520;font-size:28px;text-align:center"></div>
+  <div class="col-md-6" style="height:30"><input type="text" name="NIM" style="height:30; width:520;font-size:28px;text-align:center"></div>
   <div><input name="input" style="width:300" type="submit" value="Login" class="btn btn-info btn-lg"></div>
 </div>
+
+<div class="row">
+  <div class="col-md-8"></div>
+  <div class="col-md-4">
+	<!-- Isi pesan setelah Login -->
+  <?php //Message setelah Login / Logout / GAGAL login
+    if (isset($_GET['msg'])) //jika ada message maka ...
+    {
+      echo $_GET['msg']; //tuliskan message: "Log [IN/OUT] : [Nama Cavis]\n 2016-MM-DD jj:mm:dd [am/pm]"
+    }
+  ?>
+</div>
+</div>
+
 
 <!--<div class="row">  
   <div class="col-md-3"></div>
@@ -55,18 +69,11 @@
     <!-- <button class="btn btn-info btn-lg" style="width:300">  <input name="input" type="submit" value="Login" class="btn btn-info btn-lg"> <!--  </button> -->
 <!--  </div> -->
 
-  <!-- Isi pesan setelah Login -->
-  <?php //Message setelah Login / Logout / GAGAL login
-    if (isset($_GET['msg'])) //jika ada message maka ...
-    {
-      echo $_GET['msg']; //tuliskan message: "Log [IN/OUT] : [Nama Cavis]\n 2016-MM-DD jj:mm:dd [am/pm]"
-    }
-  ?>
 
-  <div class="container" style="height:50"></div>
+  <div class="container"></div>
   <div class="row">
   <div class="col-md-7"></div>
-  <div class="col-md-5" style="height:220;width:50"></div>
+  <div class="col-md-5" style="height:150;width:50"></div>
   <div>
     <nav>
       <ul style="font-size:18px">
