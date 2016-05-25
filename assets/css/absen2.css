@@ -5,8 +5,13 @@ input {
     border: none;
 }
 
-nav ul{height:250px; width:465px;}
-nav ul{overflow:hidden; overflow-y:scroll;}
+nav ul{
+	height:300px; 
+	width:465px;
+	border: 1px solid #000;
+	overflow:hidden; 
+	overflow-y:scroll;
+}
 
 /* unvisited link */
 a:link {

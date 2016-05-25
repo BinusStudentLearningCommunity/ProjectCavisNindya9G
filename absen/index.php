@@ -45,7 +45,7 @@
 <div class="container" style="height:250"></div>
 <div class="row">
   <div class="col-md-2"></div>
-  <div class="col-md-6" style="height:30"><input type="text" name="NIM" style="height:30; width:520;font-size:28px;text-align:center"></div>
+  <div class="col-md-6" style="height:30"><input type="text" name="NIM" class="form-control" style="height:30; width:520; border: 2px solid #ccc; font-size:28px;text-align:center"></div>
   <div><input name="input" style="width:300" type="submit" value="Login" class="btn btn-info btn-lg"></div>
 </div>
 
